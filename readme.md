@@ -25,23 +25,23 @@ I have crawled the following information
 
 The project is written on python. Install scrapy, selenium by using the following command
 
-pip install scrapy
+`pip install scrapy`
 
-pip install selenium
+`pip install selenium`
 
-now open the ~/crawling/adidas/settings.py and add the following
+now open the `~/adidas-crawler/adidas/settings.py` and add the following
 
-SELENIUM_DRIVER_ARGUMENTS = ["--headless=new", "--window-size=1920,1080"]
+`SELENIUM_DRIVER_ARGUMENTS = ["--headless=new", "--window-size=1920,1080"]`
 
-to run the project go to ~/crawling/adidas and run the following command
+to run the project go to `~/adidas-crawler/adidas` and run the following command
 
-scrapy crawl clothing_selenium -o <output_json_file_path>
+`scrapy crawl clothing_selenium -o <output_json_file_path>`
 
 this will generate a json file containing crawled data
 
 to convert the json dataset to excel file run the following script
 
-python ~/crawling/convert_crawled_json_to_excel.py <generated_json_file_path> <excel_output_file>
+`python ~/crawling/convert_crawled_json_to_excel.py <generated_json_file_path> <excel_output_file>`
 
 
 This will generate the desired excel file.
