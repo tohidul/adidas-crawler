@@ -96,9 +96,6 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 SPLASH_URL = "http://localhost:8050"
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-SELENIUM_DRIVER_ARGUMENTS = ["--headless=new"]
-DOWNLOAD_HANDLERS = {
-    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-}
-
+SELENIUM_DRIVER_ARGUMENTS = ["--headless=new", "--window-size=1920,1080"]
+# SELENIUM_DRIVER_ARGUMENTS=["--window-size=1920,1080"]
+SELENIUM_DRIVER_EXECUTABLE_PATH = [r"E:\codes\venturus\crawling\adidas\adidas\chromedriver.exe"]
